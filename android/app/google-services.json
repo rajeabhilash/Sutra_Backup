@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "335966779035",
+    "firebase_url": "https://itssutras-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "itssutras",
+    "storage_bucket": "itssutras.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335966779035:android:0dbb22e11e7cadb8d6383e",
+        "android_client_info": {
+          "package_name": "com.rajeabhilash.sutra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "335966779035-6oidf49hnntfm0b0erd5cdplrfjf12t7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAM20gY3JT9mnqFsJM3aeARHUQCWhIZ6As"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "335966779035-6oidf49hnntfm0b0erd5cdplrfjf12t7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "335966779035-rqkvvrurht59bf5ip0r0dvl0q222p9gm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.rajeabhilash.sutra"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

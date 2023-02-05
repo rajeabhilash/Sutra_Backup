@@ -1,0 +1,63 @@
+{
+  "App Details": {
+    "Name": "Sutra",
+    "Slogan": "Tvam Kim Bhava.?",
+    "Domain": "com.rajeabhilash.sutra",
+    "Author": "Raje Abhilash Mohite",
+    "Web Site": "https://rajeabhilash.com/sutra",
+    "Git Repo": "https://github.com/rajeabhilash/Sutra",
+    "Current Version": "1.0.0",
+    "Current Version Name": "Pratham"
+  },
+  "App Insights": {
+    "Fonts": ["Exo","Fontello","Gotu","Rajdhani"],
+    "Assets" : {
+      "Images" : ""
+    },
+    "Color Scheme": {
+      "Dark Color": "#2D2132",
+      "Light Color": "#C3B5C6",
+      "Black": "#1A1A1A",
+      "White": "#F6F6F4"
+    },
+    "Firebase Plugins": [
+      "firebase_core",
+      "firebase_database",
+      "firebase_messaging",
+      "firebase_auth",
+      "firebase_storage",
+      "firebase_in_app_messaging",
+      "firebase_ml_model_downloader",
+      "firebase_remote_config",
+      "firebase_app_check",
+      "firebase_analytics"
+    ],
+    "Commands Used" : {
+      "For Flutter" : {
+        "Clean": "flutter clean",
+        "Doctor" : "flutter doctor",
+        "Upgrade" : "flutter upgrade",
+        "Cache Repair" : "flutter pub cache repair",
+        "Pub Get" : "flutter pub get",
+        "Switch to Stable Channel" : "flutter channel stable",
+        "Force Upgrade": "flutter upgrade --force",
+        "Build App Bundle" : "flutter build appbundle",
+        "Build for Web" : "flutter build web",
+        "Build for Android" : "flutter build apk --split-per-abi",
+        "Activate Rename" : "dart pub global activate rename",
+        "Change App Name using Rename" : "flutter pub global run rename --appname 'Sutra'",
+        "Change App Bundle ID using Rename" : "flutter pub global run rename --bundleId com.rajeabhilash.sutra"
+      },
+      "For Database": {},
+      "For Firebase": {
+        "Firebase login" :"firebase login",
+        "Firebase init" :"firebase init",
+        "Firebase deploy" :"firebase deploy"
+      },
+      "For Command Line": {
+        "Fix Android Gradle Issue": "gradlew.bat clean",
+        "Generate App Key": "keytool -genkey -v -keystore sutra_release_keys.jks -storetype JKS -keyalg RSA -keysize 2048 -validity 10000 -alias thesutra"
+      }
+    }
+  }
+}

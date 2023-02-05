@@ -1,0 +1,17 @@
+{
+    "main": {
+        "devices" : ["desktop", "mobile", "tablet"],
+        "devices[1]" : {
+            "Splash/Welcome" : {
+                "Registered" : {
+                    "Dashboard": {
+                        "Home" : "",
+                        "Levels" : ""
+                    },
+                    "Utility":{}
+                },
+                "New User" : ["Illustration","Onboarding", "Verification"]
+            }
+        }
+    }
+}

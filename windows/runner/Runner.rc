@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.rajeabhilash" "\0"
-            VALUE "FileDescription", "sutra" "\0"
+            VALUE "FileDescription", "Sutra" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "sutra" "\0"
+            VALUE "InternalName", "Sutra" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2023 com.rajeabhilash. All rights reserved." "\0"
             VALUE "OriginalFilename", "sutra.exe" "\0"
-            VALUE "ProductName", "sutra" "\0"
+            VALUE "ProductName", "Sutra" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

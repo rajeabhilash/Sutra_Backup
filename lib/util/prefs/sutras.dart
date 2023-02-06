@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class SutraInfo {
+class Sutras {
   final String appName;
-  const SutraInfo({required this.appName});
+  const Sutras({required this.appName});
 }

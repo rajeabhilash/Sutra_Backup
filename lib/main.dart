@@ -38,7 +38,7 @@ class StartSutra extends StatelessWidget {
       builder: (context, sutraTheme) {
         return MaterialApp(
           key: sutraKey,
-          title: "The Sutra App",
+          title: "The Sutra",
           debugShowCheckedModeBanner: false,
           theme: sutraTheme,
           home: const RedirectDevice(

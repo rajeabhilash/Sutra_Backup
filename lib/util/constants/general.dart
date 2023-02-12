@@ -57,6 +57,19 @@ Widget addSpacer(val) {
   return SizedBox(height: val);
 }
 
+Widget buildCircle({
+  required Widget child,
+  required double all,
+  required Color color,
+}) =>
+    ClipOval(
+      child: Container(
+        padding: EdgeInsets.all(all),
+        color: color,
+        child: child,
+      ),
+    );
+
 enum MessageType {
   successMessage,
   errorMessage,

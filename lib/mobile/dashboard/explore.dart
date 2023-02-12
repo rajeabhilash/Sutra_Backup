@@ -17,7 +17,7 @@ class Explore extends StatelessWidget {
           onClicked: openDrawer,
         ),
         backgroundColor: Colors.transparent,
-        title: Text("Explore"),
+        title: const Text("Explore"),
       ),
       backgroundColor: Colors.transparent,
     );

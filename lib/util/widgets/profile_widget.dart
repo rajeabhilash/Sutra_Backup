@@ -35,7 +35,7 @@ class ProfileWidget extends StatelessWidget {
   }
 
   Widget buildImage() {
-    final image = imagePath.contains('assets')
+    final image = imagePath.contains('https')
         ? NetworkImage(imagePath)
         : FileImage(File(imagePath));
     return ClipOval(

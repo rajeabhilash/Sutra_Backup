@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
 class SutraTheme {
-  static final primaryColor = Colors.grey.shade900;
-  static const primary = Colors.black;
+  // static final primaryColor = Colors.grey.shade900;
+  // static const primary = Colors.black;
+  static final primaryColor = Colors.teal.shade900;
+  static const primary = Colors.teal;
 
   static final lightTheme = ThemeData(
     useMaterial3: true,

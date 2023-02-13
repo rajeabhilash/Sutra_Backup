@@ -15,7 +15,7 @@ class HiddenDrawers extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Container(
         // padding: const EdgeInsets.fromLTRB(16, 32, 16, 0),
-        padding: const EdgeInsets.fromLTRB(2, 32, 2, 0),
+        padding: const EdgeInsets.fromLTRB(2, 16, 2, 0),
         child: SingleChildScrollView(
           child: Column(
             children: [
@@ -45,56 +45,50 @@ class HiddenDrawers extends StatelessWidget {
                   style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
-                    fontSize: 24,
+                    fontSize: 20,
                   ),
                 ),
                 subtitle: const Text(
                   "Level : Body",
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Colors.white54,
                     fontSize: 14,
                   ),
                 ),
               ),
-              addSpacer(24.0),
+              addSpacer(16.0),
               const Divider(
                 color: Colors.white54,
                 endIndent: 26,
                 indent: 26,
                 thickness: 0.5,
               ),
-              addSpacer(24.0),
+              addSpacer(16.0),
               buildDrawerItems(context),
-              addSpacer(24.0),
+              addSpacer(8.0),
               const Divider(
                 color: Colors.white54,
                 endIndent: 26,
                 indent: 26,
                 thickness: 0.5,
               ),
-              addSpacer(24.0),
+              addSpacer(36.0),
               SizedBox(
                 width: 100,
                 child: Opacity(
-                  opacity: 0.75,
-                  child: Shimmer.fromColors(
-                      child: Image.asset('asset/Brand/White_Wire.png'),
-                      baseColor: Colors.teal,
-                      highlightColor: Colors.white),
+                  opacity: 0.56,
+                  child: Image.asset('asset/Brand/White_Gradient.png'),
                 ),
               ),
-              addSpacer(12.0),
+              addSpacer(8.0),
               SizedBox(
                 width: 64,
                 child: Opacity(
-                  opacity: 0.75,
-                  child: Shimmer.fromColors(
-                      child: Image.asset('asset/LightSutra.png'),
-                      baseColor: Colors.teal,
-                      highlightColor: Colors.white),
+                  opacity: 0.56,
+                  child: Image.asset('asset/LightSutra.png'),
                 ),
               ),
-              addSpacer(12.0),
+              addSpacer(20.0),
               const Text(
                 "App Version : v1.0.0",
                 style: TextStyle(
@@ -121,26 +115,45 @@ class HiddenDrawers extends StatelessWidget {
                           width: DrawerItems.all.indexOf(item) == currentIndex
                               ? 250
                               : 0,
-                          child: Container(
-                            decoration: BoxDecoration(
-                                color: Colors.teal.shade800,
-                                borderRadius: const BorderRadius.all(
-                                    Radius.circular(14))),
+                          child: Shimmer.fromColors(
+                            highlightColor: Colors.teal,
+                            baseColor: Colors.teal.shade800,
+                            child: Container(
+                              decoration: BoxDecoration(
+                                  color: Colors.teal.shade800,
+                                  borderRadius: const BorderRadius.all(
+                                      Radius.circular(14))),
+                            ),
                           ),
                         )
-                      : SizedBox(),
+                      : const SizedBox(),
                   ListTile(
                     contentPadding: const EdgeInsets.symmetric(
-                        horizontal: 28.0, vertical: 2.0),
+                      horizontal: 28.0,
+                      vertical: 2.0,
+                    ),
                     leading: Icon(
                       item.icon,
-                      color: Colors.white,
+                      color: DrawerItems.all.indexOf(item) == currentIndex
+                          ? Colors.white
+                          : Colors.white54,
                     ),
                     // selected: true,
                     // selectedTileColor: Colors.teal.shade800,
                     title: Text(
                       item.title,
-                      style: const TextStyle(color: Colors.white, fontSize: 18),
+                      style: TextStyle(
+                          color: DrawerItems.all.indexOf(item) == currentIndex
+                              ? Colors.white
+                              : Colors.white54,
+                          fontSize:
+                              DrawerItems.all.indexOf(item) == currentIndex
+                                  ? 21
+                                  : 18,
+                          fontWeight:
+                              DrawerItems.all.indexOf(item) == currentIndex
+                                  ? FontWeight.bold
+                                  : FontWeight.normal),
                     ),
                     onTap: () {
                       onSelectedItem(item);

@@ -35,13 +35,6 @@ class _DashBoardState extends State<DashBoard> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   leading: DrawerWidgetMenu(
-      //     onClicked: widget.openDrawer,
-      //   ),
-      //   backgroundColor: Colors.transparent,
-      //   title: Text("Dashboard"),
-      // ),
       backgroundColor: Colors.transparent,
       body: SingleChildScrollView(
         child: Column(

@@ -1,4 +1,5 @@
 import 'package:animated_theme_switcher/animated_theme_switcher.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:sutra/util/prefs/user_preferences.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:sutra/util/constants/general.dart';
@@ -17,6 +18,7 @@ void main() async {
   if (defaultTargetPlatform != TargetPlatform.windows) {
     await Firebase.initializeApp();
     await UserPreferences.init();
+    await MobileAds.instance.initialize();
   }
 
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]).then(
@@ -38,7 +40,7 @@ class StartSutra extends StatelessWidget {
       builder: (context, sutraTheme) {
         return MaterialApp(
           key: sutraKey,
-          title: "The Sutra",
+          title: "Sutra",
           debugShowCheckedModeBanner: false,
           theme: sutraTheme,
           home: const RedirectDevice(

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:sutra/mobile/dashboard/drawer/drawer_item_list.dart';
 import 'package:sutra/util/constants/general.dart';
 import 'package:sutra/mobile/dashboard/drawer/drawer_item.dart';
-
 import 'package:shimmer/shimmer.dart';
 
 class HiddenDrawers extends StatelessWidget {

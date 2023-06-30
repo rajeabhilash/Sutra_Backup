@@ -80,6 +80,7 @@ class _VerifyEmailState extends State<VerifyEmail> {
     try {
       final user = FirebaseAuth.instance.currentUser!;
       await user.sendEmailVerification();
+      // ignore: use_build_context_synchronously
       showSnackBar(context, MessageType.successMessage,
           'Verification Mail Sent.!, Please Check Mailbox.');
 

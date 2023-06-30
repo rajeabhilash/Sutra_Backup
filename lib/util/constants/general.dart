@@ -57,6 +57,10 @@ Widget addSpacer(val) {
   return SizedBox(height: val);
 }
 
+Widget addHSpacer(val) {
+  return SizedBox(width: val);
+}
+
 Widget buildCircle({
   required Widget child,
   required double all,

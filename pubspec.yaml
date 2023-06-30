@@ -57,6 +57,9 @@ dependencies:
   shimmer: ^2.0.0
   wave: ^0.2.2
   google_mobile_ads: ^2.3.0
+  timeline_tile: ^2.0.0
+  simple_heatmap_calendar: ^0.1.2
+  audioplayers: ^4.0.1
   # flutter_native_splash: ^2.2.16
 
 dev_dependencies:
